@@ -11,28 +11,28 @@ print("")
 print('This Scipt Generates Sheet ID from workspace')
 
 print("""
-# 1 - 958554527033220 - site note workspace
-# 2 - 6105493547575172 - aj workspace
-# 3 - 1696183484737412 - FY Trackers
+# 1 - Enter site IDs here
+# 2 - Enter site IDs here
+# 3 - Enter site IDs here
 """)
 
 try:
     selection = int(input('Select Workspace to generate sheet ID (1, 2, or 3): '))
     if selection == 1:
-        wdid = 958554527033220
+        wdid = '#1'
         print("")
         get1 = datetime.now()
-        print(get1.strftime("%Y-%m-%d %H:%M:%S"), "Generating Sheets IDs for Site Note workspace")
+        print(get1.strftime("%Y-%m-%d %H:%M:%S"), "Generating Sheets IDs x")
     elif selection == 2:
-        wdid = 6105493547575172
+        wdid = '#1'
         print("")
         get2 = datetime.now()
-        print(get2.strftime("%Y-%m-%d %H:%M:%S"), "Generating Sheets IDs for AJ\'s workspace")
+        print(get2.strftime("%Y-%m-%d %H:%M:%S"), "Generating Sheets IDs x")
     elif selection == 3:
-        wdid = 1696183484737412
+        wdid = '#1'
         print("")
         get3 = datetime.now()
-        print(get3.strftime("%Y-%m-%d %H:%M:%S"), "Generating Sheets IDs for FY Tracker workspace")
+        print(get3.strftime("%Y-%m-%d %H:%M:%S"), "Generating Sheets IDs x")
     else:
         print('Invalid selection.')
         wdid = None
@@ -40,12 +40,8 @@ except ValueError:
     print('Please enter a valid number.')
     wdid = None
 
-API_TOKEN = '6RHVTSbWLt01wBGs81zD0j0WZZDRzeWk3EDcE'
+API_TOKEN = 'insert token' # Replace with your actual token
 WORKSPACE_ID = wdid  # Replace with your actual workspace ID
-
-# 958554527033220 - site note workspace
-# 6105493547575172 - aj workspace
-# 1696183484737412 - FY Trackers
 
 # Initialize Smartsheet client
 
